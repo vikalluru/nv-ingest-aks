@@ -1,0 +1,44 @@
+
+#pdf_viewer {
+        overflow: auto; 
+        padding: 10px; 
+    }
+    .scrollable-textbox textarea {
+    height: 300px !important;
+    overflow-y: auto !important;
+}
+  .gradio-container {
+        background-color: #f9f9f9; /* Light background for a clean look */
+        border-radius: 8px; /* Rounded corners */
+        padding: 20px; /* Inner padding */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+    .gr-button:hover {
+        background-color: #5BA700; /* Darker green on hover */
+    }
+   .cost {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 125%; /* Position above the cost */
+    left: 50%;
+    margin-left: -100px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cost:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,5 @@
+gradio
+gradio-pdf
+langchain-core
+PyMuPDF
+azure-storage-blob
