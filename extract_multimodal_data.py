@@ -64,7 +64,7 @@ def extracted_multimodal_data(filepath):
     contenttext = ""
 
     # print(result)
-    for element in result[0][0]:
+    for element in result[0]:  
         if element['document_type'] == 'text':
             text_content.append(Document(element['metadata']['content']))
             contenttext = contenttext + Document(element['metadata']['content']).page_content 
